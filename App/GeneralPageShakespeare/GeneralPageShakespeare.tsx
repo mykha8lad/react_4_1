@@ -8,7 +8,7 @@ import HamletShakespear from '../HamletShakespeare/HamletShakespeare';
 
 const headerStyle: React.CSSProperties = {
     textAlign: 'center',
-    color: '#fff',
+    color: '#000',
     height: 64,
     paddingInline: 48,
     lineHeight: '64px',
@@ -46,7 +46,9 @@ export default function GeneralPageShakespeare() {
                         </ul>
                     </Sider>
                     <Layout>
-                        <Header style={headerStyle}></Header>
+                        <Header style={headerStyle}>
+                            <p>Используя рендеринг элементов создайте приложение, отображающее библиографию Шекспира.</p>
+                        </Header>
                         <Content style={contentStyle}>
                             <Routes>
                                 <Route path='shakespeare' element={<ShakespeareGeneralInformation />}></Route>
