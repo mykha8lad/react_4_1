@@ -1,0 +1,12 @@
+.information {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.shakespeare-image {
+    float: left;
+    margin-right: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 340px;
+}
