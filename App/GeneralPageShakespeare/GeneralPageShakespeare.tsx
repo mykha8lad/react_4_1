@@ -1,5 +1,5 @@
 import './GeneralPageShakespeare.css'
-import React from 'react';
+import React, { useState } from 'react';
 import { Flex, Layout } from 'antd';
 const { Header, Sider, Content } = Layout;
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -34,8 +34,6 @@ const headerStyle: React.CSSProperties = {
     maxWidth: '100%',
   };
 
-const black = 'black'
-
 export default function GeneralPageShakespeare() {
     return (
         <Flex gap="middle" wrap>
@@ -43,8 +41,8 @@ export default function GeneralPageShakespeare() {
                 <Router>
                     <Sider width="20%" style={siderStyle}>
                         <ul className='menu-items'>                            
-                            <li><Link to="shakespeare" style={{color: black}}>Shakespeare</Link></li>
-                            <li><Link to="shakespeare/hamlet" style={{color: black}}>Hamlet</Link></li>
+                            <li><Link to="shakespeare">Shakespeare</Link></li>
+                            <li><Link to="shakespeare/hamlet">Hamlet</Link></li>
                         </ul>
                     </Sider>
                     <Layout>
